@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script name="font-awesome" src="https://kit.fontawesome.com/8550e015d6.js" crossorigin="anonymous"></script>
+
+        <style>
+
+            body{
+                background: linear-gradient( rgba(0, 0, 0, 0.95),rgba(0,0,0,0.60),rgba(0,0,0,0),rgba(0, 0, 0, 0))
+               ,url(blood.jpg)no-repeat right fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+            .project{
+                float: right;
+                margin-top: 2%;
+                /* border: 1px solid black; */
+                width: 1100px;
+
+            }
+            .project ul li{
+                display: inline-block;
+                width: 18%;
+                float: left;
+                margin: 10px auto;
+                text-align: center;
+            }
+
+            .project ul li a:hover{
+                font-size: 145%;
+
+
+            }
+
+            .project ul li a{
+                text-decoration: none;
+                color: rgba(255, 0, 0, 0.605);
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: bold;
+                font-size:130%;
+
+
+            }
+            .welcome{
+                width: 400px;
+                height: 100vh;
+                background-color: black;
+                opacity: 0.55;
+                color: white;
+                text-align: center;
+                padding-top: 1% ;
+                padding-right: 1% ;
+                z-index: 1;
+                position: relative;
+
+            }
+            .welcome .closebtn{
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 45px;
+                margin-left: 50px;
+                color: white;
+                
+            }
+
+        </style>
+
+
+
+
+    </head>
+
+
+<body>
+    
+    <div class="project">
+        <ul type="none">
+            <li><a href="">Home</a></li>
+            <li><a href="">Blood Donor?</a></li>
+            <li><a href="">Need Blood?</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Login</a></li>
+        </ul>
+    </div>
+
+
+    <div id="myWelcome" class="welcome">
+        
+        <a href="javascript:void(0)" class="closebtn" onclick="closeWelcome()"><i class="fas fa-times"></i></a><br><br><br>
+        <h2 class="test">GREETINGS</h2><br>
+        <h4>Welcome everyone if you are a new user please read the following instructions carefully.</h4><br>
+        <ul style="text-align: left;">
+            <li>
+                <h5>This is a non profit organisation for the benifit of the people who are in the need of blood. If you are new to to this website and willing to donate blood for people in need please register here "<a style="color: cyan;" href="">Blood Donor?</a>" with the necessary details correctly. </h5>
+            </li>
+            <li>
+                <h5>If you are in need of any type of blood kindly visit this link "<a style="color: cyan;"href="">Need Blood?</a>" and choose the correct blood group that you need and contact them accordingly.
+                </h5>
+            </li>
+            <li>
+                <h5>If you have any issues or queries related to the process kindly "<a style="color: cyan;"href="">Contact us</a>".
+                </h5>
+            </li>
+
+        </ul>
+    
+    </div>
+
+    <script>
+        function closeWelcome() {
+            document.getElementById("myWelcome").style.width = "0";
+                    
+        }
+
+    </script>
+</body>
+
+</html>
